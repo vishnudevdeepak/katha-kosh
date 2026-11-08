@@ -17,13 +17,6 @@ const CATEGORIES = [
   { key: 'music', label: 'Music' },
 ];
 
-const STATS = [
-  { label: 'Heritage Items', value: '25+' },
-  { label: 'Indian States', value: '15+' },
-  { label: 'Categories', value: '11' },
-  { label: 'Languages', value: '12+' },
-];
-
 export default function HomePage() {
   const [featured, setFeatured] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -60,18 +53,6 @@ export default function HomePage() {
               </Link>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="border-b border-border bg-card">
-        <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {STATS.map(({ label, value }) => (
-            <div key={label}>
-              <div className="font-serif text-3xl text-primary font-bold">{value}</div>
-              <div className="text-xs uppercase tracking-widest text-muted mt-1">{label}</div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -139,4 +120,3 @@ export default function HomePage() {
     </div>
   );
 }
-

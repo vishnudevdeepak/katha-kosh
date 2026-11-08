@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ArchivePage from './pages/ArchivePage';
 import ItemDetailPage from './pages/ItemDetailPage';
@@ -27,10 +26,8 @@ export default function App() {
               <Route path="/login" element={<LoginPage />} />
             </Routes>
           </main>
-          <Footer />
         </div>
       </Router>
     </AuthProvider>
   );
 }
-
