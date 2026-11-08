@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local data and generated files
+*.db
+*.sqlite
+*.sqlite3
+backend/uploads/
+backend/faiss_index*
+
+# Node
+node_modules/
+dist/
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
